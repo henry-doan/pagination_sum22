@@ -6,6 +6,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import Languages from './components/languages/Languages';
 
 const App = () => (
   <>
@@ -14,7 +15,7 @@ const App = () => (
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/' element={<ProtectedRoute />}>
-
+          <Route path='/languages' element={<Languages />} />
         </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />

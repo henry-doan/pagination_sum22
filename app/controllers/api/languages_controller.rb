@@ -29,7 +29,7 @@ class Api::LanguagesController < ApplicationController
 
   def destroy
     @language.destroy
-    render json { message: 'Language Deleted' }
+    render json: { message: 'Language Deleted' }
   end
 
   private 

@@ -9,6 +9,11 @@ const MainNavbar = ({ user, handleLogout }) => {
     if (user) {
       return (
         <Nav className="me-auto">
+          <Nav.Link>
+            <Link to='/languages'>
+              Langauges
+            </Link>
+          </Nav.Link>
           <Nav.Link onClick={() => handleLogout()}>
             Logout
           </Nav.Link>
