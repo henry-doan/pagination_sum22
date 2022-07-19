@@ -42,8 +42,7 @@ const MainNavbar = ({ user, handleLogout }) => {
           <Navbar.Brand href="#home">
             <Link to='/'> Home</Link>
           </Navbar.Brand>
-          { rightNavItems() }
-         
+          { rightNavItems() }  
         </Container>
       </Navbar>
     </>
